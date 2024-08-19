@@ -1,0 +1,146 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+}
+
+nav h1 {
+  display: inline-block;
+  margin: 0;
+  padding-left: 20px;
+}
+
+nav .abc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  padding-right: 20px;
+}
+
+nav .abc ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav .abc ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav .abc ul li a:hover {
+  color: #ff6600;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Card Styles */
+.cards_container, .name {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card, .card1 {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  width: calc(33.333% - 30px);
+  padding: 15px;
+  text-align: center;
+}
+
+.card img, .card1 img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card h2, .card1 h2 {
+  margin-top: 15px;
+  color: #333;
+}
+
+.card p, .card1 p {
+  color: #666;
+}
+
+/* Form Styles */
+form {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"], form input[type="email"], form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #e65c00;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer .ala h2 {
+  margin: 5px 0;
+}
+
+footer img {
+  width: 50px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card, .card1 {
+    width: calc(50% - 30px);
+  }
+
+  nav .abc ul {
+    text-align: center;
+
